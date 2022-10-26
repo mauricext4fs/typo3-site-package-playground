@@ -1,5 +1,26 @@
 {
 	"name": "mauricext4fs/typo3-site-package-playground-vlad",
 	"type": "typo3-cms-extension",
-	"description": "Moe's Typo3 Site Package Playground vlad"	
+	"description": "Moe's Typo3 Site Package Playground vlad",
+    "license": "MIT",
+	"keywords": [
+		"typo3",
+		"site package",
+		"documentation",
+        "playground",
+        "Moe's Site Package Playground"
+	],
+	"autoload": {
+		"psr-4": {
+			"MauriceXt4fs\\MoesSitePackage\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "moes_site_package"
+		},
+		"branch-alias": {
+			"dev-master": "12.0.x-dev"
+		}
+	}
 }
