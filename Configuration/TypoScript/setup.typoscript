@@ -1,0 +1,6 @@
+lib.footer = TEXT
+lib.footer.value = {$minsitepackage.page.title}
+lib.footer.wrap = <footer> &copy | </footer>
+
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:moes_site_package/Configuration/TypoScript/Setup/*.typoscript'

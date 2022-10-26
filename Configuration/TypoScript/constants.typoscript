@@ -1,0 +1,11 @@
+minsitepackage.page.title = Boring Site Package Title
+
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+page {
+  fluidtemplate {
+    layoutRootPath = EXT:moes_site_package/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:moes_site_package/Resources/Private/Partials/Page/
+    templateRootPath = EXT:moes_site_package/Resources/Private/Templates/Page/
+  }
+}
