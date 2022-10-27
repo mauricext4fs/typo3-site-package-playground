@@ -3,22 +3,21 @@
     <f:render partial="Navigation/MainNavigation.html" arguments="{_all}"/>
 
     <main role="main">
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
-                <p> ... </p>
-            </div>
-        </div>
+
+        <f:render partial="Jumbotron" arguments="{jumbotronContent: jumbotronContent}"/>
+
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2>Main Content</h2>
-                    <p> ... </p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h2>Sidebar Content</h2>
-                    <p> ... </p>
-                </div>
+				<div class="col-md-12">
+					<f:for each="{mainContent}" as="contentElement">
+						<f:cObject
+							typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+							data="{contentElement.data}"
+							table="tt_content"
+						/>
+					</f:for>
+				</div>
+			  </div>
             </div>
         </div>
     </main>

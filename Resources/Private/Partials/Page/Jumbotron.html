@@ -1,6 +1,8 @@
 <div class="jumbotron">
+    <f:for each="{jumbotronContent}" as="contentElement">
         <div class="container">
-            <h1 class="display-3">Min ist Vlad!</h1>
-            <p> ... </p>
+            <h1 class="display-3">{contentElement.data.header}</h1>
+            <f:format.html>{contentElement.data.bodytext}</f:format.html>
         </div>
-    </div>
+    </f:for>
+</div>
